@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bingo</title>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src='js/jquery-ui-1.12.1/jquery-ui.min.js'></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+            
+        <div class="container" id="container" style="margin-left: 0 !important;">
+            
+                <div id="content">
+                    <div class="row"><input id="input_num" class="form-control col-3" type="text"><button class="btn btn-primary" onclick="insert();">Inserir</button></div>
+                    <div class="row">
+                    <table id="bingotable" style="margin-left: 0 !important; margin-right: 0 !important;">
+                        <thead >
+                        
+                            <th class="orange">B</th>
+                            <th class="orange">I</th>
+                            <th class="orange">N</th>
+                            <th class="orange">G</th>
+                            <th class="orange">O</th>
+                        
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="square0" class="s0" contenteditable="true"></td>
+                            <td id="square1" class="s1" contenteditable="true"></td>
+                            <td id="square2" class="s2" contenteditable="true"></td>
+                            <td id="square3" class="s3" contenteditable="true"></td>
+                            <td id="square4" class="s4" contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td id="square0" class="s0" contenteditable="true"></td>
+                            <td id="square6" class="s1" contenteditable="true"></td>
+                            <td id="square7" class="s2" contenteditable="true"></td>
+                            <td id="square8" class="s3" contenteditable="true"></td>
+                            <td id="square9" class="s4" contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td id="square0" class="s0" contenteditable="true"></td>
+                            <td id="square11" class="s1" contenteditable="true"></td>
+                            <td id="square11" class="s2" contenteditable="true"></td>
+                            <td id="square12" class="s3" contenteditable="true"></td>
+                            <td id="square13" class="s4" contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td id="square0" class="s0" contenteditable="true"></td>
+                            <td id="square15" class="s1" contenteditable="true"></td>
+                            <td id="square16" class="s2" contenteditable="true"></td>
+                            <td id="square17" class="s3" contenteditable="true"></td>
+                            <td id="square18" class="s4" contenteditable="true"></td>
+                        </tr>
+                        <tr>
+                            <td id="square0" class="s0" contenteditable="true"></td>
+                            <td id="square20" class="s1" contenteditable="true"></td>
+                            <td id="square21" class="s2" contenteditable="true"></td>
+                            <td id="square22" class="s3" contenteditable="true"></td>
+                            <td id="square23" class="s4" contenteditable="true"></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <button class="btn btn-primary" onclick="plus();">+</button>
+                    <button class="btn btn-danger" onclick="clean();">C</button>
+                    </div>
+                </div>
+                </div>
+
+</body>
+</html>
