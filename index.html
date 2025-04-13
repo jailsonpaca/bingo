@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Bingo</title>
     <script src="js/jquery-3.4.0.min.js"></script>
@@ -10,23 +11,27 @@
     <link type="text/css" rel="stylesheet" href="css/index.css">
     <script src="js/index.js"></script>
 </head>
+
 <body>
-            
-        <div class="container" id="container" style="margin-left: 0 !important;">
-            
-                <div id="content">
-                    <div class="row"><input id="input_num" class="form-control col-3" type="text"><button class="btn btn-primary" onclick="insert();">Inserir</button></div>
-                    <div class="row">
-                    <table id="bingotable" style="margin-left: 0 !important; margin-right: 0 !important;">
-                        <thead >
-                        
-                            <th class="orange">B</th>
-                            <th class="orange">I</th>
-                            <th class="orange">N</th>
-                            <th class="orange">G</th>
-                            <th class="orange">O</th>
-                        
-                        
+
+    <div class="container" id="container"
+        style="margin-left: 0 !important; display: flex; justify-content: center; align-items: center;">
+
+        <div id="content">
+            <div class="row"><input id="input_num" class="form-control col-8" type="text"><button
+                    class="btn btn-primary" onclick="insert();">Inserir</button></div>
+
+            <div class="row">
+                <table id="bingotable" style="margin-left: 0 !important; margin-right: 0 !important;">
+                    <thead>
+
+                        <th class="orange">B</th>
+                        <th class="orange">I</th>
+                        <th class="orange">N</th>
+                        <th class="orange">G</th>
+                        <th class="orange">O</th>
+
+
                     </thead>
                     <tbody>
                         <tr>
@@ -51,7 +56,7 @@
                             <td id="square13" class="s4" contenteditable="true"></td>
                         </tr>
                         <tr>
-                             <td id="square0" class="s0" contenteditable="true"></td>
+                            <td id="square0" class="s0" contenteditable="true"></td>
                             <td id="square15" class="s1" contenteditable="true"></td>
                             <td id="square16" class="s2" contenteditable="true"></td>
                             <td id="square17" class="s3" contenteditable="true"></td>
@@ -65,12 +70,24 @@
                             <td id="square23" class="s4" contenteditable="true"></td>
                         </tr>
                     </tbody>
-                    </table>
-                    <button class="btn btn-primary" onclick="plus();">+</button>
-                    <button class="btn btn-danger" onclick="clean();">C</button>
-                    </div>
-                </div>
-                </div>
+                </table>
+                <button class="btn btn-primary" onclick="plus();">+</button>
+                <button class="btn btn-danger" onclick="clean();">C</button>
+            </div>
+            <div class="row"><button id="start-intervalo" class="btn btn-secondary mt-3">Iniciar Intervalo</button>
+            </div>
+        </div>
+    </div>
+    <div id="intervalo-container" style="display:none;">
+        <h2 class="text-center fw-bold my-4">Intervalo</h2>
+        <div id="slideshow">
+            <img id="slide-image" src="" alt="Patrocinador" />
+        </div>
+        <button id="voltar" style="margin-left:50%; transform: translateX(-50%);"
+            class="max-auto btn btn-secondary mt-3">Voltar</button>
+    </div>
 
+    <script src="js/slide.js"></script>
 </body>
+
 </html>
