@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/switch.css">
     <script src="js/index.js"></script>
 </head>
 
@@ -74,7 +75,15 @@
                 <button class="btn btn-primary" onclick="plus();">+</button>
                 <button class="btn btn-danger" onclick="clean();">C</button>
             </div>
-            <div class="row"><button id="start-intervalo" class="btn btn-secondary mt-3">Iniciar Intervalo</button>
+            <div class="row">
+                <button id="start-intervalo" class="btn btn-secondary mt-3" style="display: block;">Iniciar Intervalo</button>
+                <div class="mt-3 ms-2" style="display: flex; align-items: center;">
+                    <label class="switch">
+                        <input type="checkbox" id="random-mode-switch" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <span class="mode-label" id="mode-label">Modo: Aleatório</span>
+                </div>
             </div>
         </div>
     </div>
