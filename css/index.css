@@ -87,3 +87,16 @@ th, td {
 .clean {
     margin-left: 100px;
 }
+
+/* Modal centering styles */
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+.modal-content {
+    margin: auto;
+    max-width: 400px;
+    width: 90%;
+}

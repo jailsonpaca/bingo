@@ -60,6 +60,26 @@ function toggleRandomMode(event) {
     : "Sequencial";
 }
 
+// Function to handle clean confirmation
+function confirmClean() {
+  // Close the modal
+  const modal = bootstrap.Modal.getInstance(document.getElementById('confirmModal'));
+  modal.hide();
+  
+  // Call the original clean function
+  clean();
+}
+
+// Add enter key handler for input field
+document.getElementById('input_num').addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault(); // Prevent form submission if inside a form
+    insert();
+    // Clear the input field
+    event.target.value = '';
+  }
+});
+
 document
   .getElementById("start-intervalo")
   .addEventListener("click", startSlideshow);
