@@ -15,7 +15,7 @@ td {
 }
 
 body {
-  background: #1abc9c;
+  background: #FFF;
   /*display: flex;*/
   height: 100vh;
   align-content: center;
@@ -82,4 +82,8 @@ th, td {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   opacity: 0;
   transition: opacity 1s ease-in-out;
+}
+
+.clean {
+    margin-left: 100px;
 }
